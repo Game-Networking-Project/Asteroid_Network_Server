@@ -1,3 +1,4 @@
-.vs
-.git
-Bin
+.vs/
+.git/
+Bin/
+*.sln
