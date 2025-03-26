@@ -1,6 +1,6 @@
 .vs/
-.db
-.suo
+*.db
+*.suo
 .ipch
 .git
 Bin

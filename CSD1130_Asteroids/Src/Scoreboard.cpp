@@ -8,5 +8,5 @@ struct Player {
 	int score = 0;
 };
 
-// List of player
+// List of players
 std::map<int, Player> list_of_players;
