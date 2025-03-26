@@ -172,12 +172,14 @@
     <ClInclude Include="Include\GameStateMgr.h" />
     <ClInclude Include="Include\GameState_Asteroids.h" />
     <ClInclude Include="Include\Main.h" />
+    <ClInclude Include="Include\Scoreboard.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\Collision.cpp" />
     <ClCompile Include="Src\GameStateMgr.cpp" />
     <ClCompile Include="Src\GameState_Asteroids.cpp" />
     <ClCompile Include="Src\Main.cpp" />
+    <ClCompile Include="Src\Scoreboard.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
