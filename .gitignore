@@ -1,3 +1,6 @@
-.vs
+.vs/
+.db
+.suo
+.ipch
 .git
 Bin
