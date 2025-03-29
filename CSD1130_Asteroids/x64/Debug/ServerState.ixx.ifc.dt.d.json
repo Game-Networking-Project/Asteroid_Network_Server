@@ -1,0 +1,36 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\yeoji.000\\downloads\\telegram desktop\\network_game\\asteroid_server\\csd1130_asteroids\\module\\serverstate.ixx",
+        "ProvidedModule": "ServerState",
+        "Includes": [
+            "c:\\users\\yeoji.000\\downloads\\telegram desktop\\network_game\\asteroid_server\\csd1130_asteroids\\include\\asteroiddata.h",
+            "c:\\users\\yeoji.000\\downloads\\telegram desktop\\network_game\\asteroid_server\\dep\\alphaengine\\include\\aevec2.h",
+            "c:\\users\\yeoji.000\\downloads\\telegram desktop\\network_game\\asteroid_server\\dep\\alphaengine\\include\\aeexport.h",
+            "c:\\users\\yeoji.000\\downloads\\telegram desktop\\network_game\\asteroid_server\\dep\\alphaengine\\include\\aetypes.h",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\cstdint",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\yvals_core.h",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\vcruntime.h",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\sal.h",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\concurrencysal.h",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\vadefs.h",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\xkeycheck.h",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\stdint.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": [
+            {
+                "Header": "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\cstdint",
+                "BMI": "C:\\Users\\yeoji.000\\Downloads\\Telegram Desktop\\network_game\\asteroid_server\\CSD1130_Asteroids\\x64\\Debug\\cstdint_FFAD709075BDCC63.ifc.dt"
+            },
+            {
+                "Header": "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\vector",
+                "BMI": "C:\\Users\\yeoji.000\\Downloads\\Telegram Desktop\\network_game\\asteroid_server\\CSD1130_Asteroids\\x64\\Debug\\vector_2C488EE7B13109BB.ifc.dt"
+            },
+            {
+                "Header": "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\mutex",
+                "BMI": "C:\\Users\\yeoji.000\\Downloads\\Telegram Desktop\\network_game\\asteroid_server\\CSD1130_Asteroids\\x64\\Debug\\mutex_116D14D00D8FF37.ifc.dt"
+            }
+        ]
+    }
+}

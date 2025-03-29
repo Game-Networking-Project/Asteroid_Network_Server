@@ -112,6 +112,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>..\Dep\AlphaEngine\Include;Include;</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -154,6 +155,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>..\Dep\AlphaEngine\Include;Include;</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -175,6 +177,7 @@
     <ClInclude Include="Include\Scoreboard.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Module\ServerState.ixx" />
     <ClCompile Include="Src\AsteroidData.cpp" />
     <ClCompile Include="Src\Collision.cpp" />
     <ClCompile Include="Src\GameStateMgr.cpp" />

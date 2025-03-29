@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\vector_11MMQ55SQ2ZS5YTH.obj",
+            "outputs": [
+                "C:\\Users\\yeoji.000\\Downloads\\Telegram Desktop\\network_game\\asteroid_server\\CSD1130_Asteroids\\x64\\Debug\\vc143.pdb",
+                "x64\\Debug\\vector_11MMQ55SQ2ZS5YTH.module.json",
+                "x64\\Debug\\vector_11MMQ55SQ2ZS5YTH.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\vector",
+                    "source-path": "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\vector",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

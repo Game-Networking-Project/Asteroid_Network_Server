@@ -1,0 +1,10 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\yeoji.000\\downloads\\telegram desktop\\network_game\\asteroid_server\\csd1130_asteroids\\include\\serverstate.ixx",
+        "ProvidedModule": "ServerState",
+        "Includes": [],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

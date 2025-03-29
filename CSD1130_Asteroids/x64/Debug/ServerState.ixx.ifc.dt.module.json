@@ -1,0 +1,41 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\ServerState.obj",
+            "outputs": [
+                "x64\\Debug\\ServerState.ixx.ifc.dt.module.json",
+                "x64\\Debug\\ServerState.ixx.ifc.dt.d.json",
+                "x64\\Debug\\ServerState.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "ServerState",
+                    "source-path": "c:\\users\\yeoji.000\\downloads\\telegram desktop\\network_game\\asteroid_server\\csd1130_asteroids\\module\\serverstate.ixx",
+                    "is-interface": true
+                }
+            ],
+            "requires": [
+                {
+                    "logical-name": "cstdint",
+                    "source-path": "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\cstdint",
+                    "lookup-method": "include-angle",
+                    "unique-on-source-path": true
+                },
+                {
+                    "logical-name": "vector",
+                    "source-path": "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\vector",
+                    "lookup-method": "include-angle",
+                    "unique-on-source-path": true
+                },
+                {
+                    "logical-name": "mutex",
+                    "source-path": "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\mutex",
+                    "lookup-method": "include-angle",
+                    "unique-on-source-path": true
+                }
+            ]
+        }
+    ]
+}
