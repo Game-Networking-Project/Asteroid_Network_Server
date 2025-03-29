@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\ServerState.obj",
+            "outputs": [
+                "x64\\Debug\\ServerState.ixx.obj.dt.module.json",
+                "x64\\Debug\\ServerState.ixx.obj.dt.d.json",
+                "ServerState.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "ServerState",
+                    "source-path": "c:\\users\\yeoji.000\\downloads\\telegram desktop\\network_game\\asteroid_server\\csd1130_asteroids\\include\\serverstate.ixx",
+                    "is-interface": true
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

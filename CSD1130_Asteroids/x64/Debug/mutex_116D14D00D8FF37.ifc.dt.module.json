@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\mutex.obj",
+            "outputs": [
+                "x64\\Debug\\mutex_116D14D00D8FF37.ifc.dt.module.json",
+                "x64\\Debug\\mutex_116D14D00D8FF37.ifc.dt.d.json",
+                "x64\\Debug\\mutex.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\mutex",
+                    "source-path": "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\mutex",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

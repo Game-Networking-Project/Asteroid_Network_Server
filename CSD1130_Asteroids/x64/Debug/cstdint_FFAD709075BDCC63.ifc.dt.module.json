@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\cstdint.obj",
+            "outputs": [
+                "x64\\Debug\\cstdint_FFAD709075BDCC63.ifc.dt.module.json",
+                "x64\\Debug\\cstdint_FFAD709075BDCC63.ifc.dt.d.json",
+                "x64\\Debug\\cstdint.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\cstdint",
+                    "source-path": "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\cstdint",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

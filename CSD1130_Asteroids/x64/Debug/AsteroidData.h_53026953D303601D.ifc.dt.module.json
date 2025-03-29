@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\AsteroidData.obj",
+            "outputs": [
+                "x64\\Debug\\AsteroidData.h_53026953D303601D.ifc.dt.module.json",
+                "x64\\Debug\\AsteroidData.h_53026953D303601D.ifc.dt.d.json",
+                "x64\\Debug\\AsteroidData.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:\\Users\\yeoji.000\\Downloads\\Telegram Desktop\\network_game\\asteroid_server\\CSD1130_Asteroids\\Include\\AsteroidData.h",
+                    "source-path": "c:\\users\\yeoji.000\\downloads\\telegram desktop\\network_game\\asteroid_server\\csd1130_asteroids\\include\\asteroiddata.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

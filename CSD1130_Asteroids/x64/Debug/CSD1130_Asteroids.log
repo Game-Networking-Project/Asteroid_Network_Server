@@ -1,7 +1,7 @@
-﻿  Collision.cpp
-  GameStateMgr.cpp
-  GameState_Asteroids.cpp
+﻿  Scanning sources for module dependencies...
   Main.cpp
-  Generating Code...
-D:\GitHub\Asteroid_Network_Server\CSD1130_Asteroids\Src\Collision.cpp(269): warning C4702: unreachable code
-  CSD1130_Asteroids.vcxproj -> D:\GitHub\Asteroid_Network_Server\Bin\CSD1130_AsteroidsD.exe
+C:\Users\yeoji.000\Downloads\Telegram Desktop\network_game\asteroid_server\CSD1130_Asteroids\Src\Main.cpp(58,90): warning C4100: 'show': unreferenced formal parameter
+C:\Users\yeoji.000\Downloads\Telegram Desktop\network_game\asteroid_server\CSD1130_Asteroids\Src\Main.cpp(186,1): warning C4715: 'WinMain': not all control paths return a value
+  CSD1130_Asteroids.vcxproj -> C:\Users\yeoji.000\Downloads\Telegram Desktop\network_game\asteroid_server\Bin\CSD1130_AsteroidsD.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

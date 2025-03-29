@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\cstdint_JIY8CO6A34P5XYH7.obj",
+            "outputs": [
+                "C:\\Users\\yeoji.000\\Downloads\\Telegram Desktop\\network_game\\asteroid_server\\CSD1130_Asteroids\\x64\\Debug\\vc143.pdb",
+                "x64\\Debug\\cstdint_JIY8CO6A34P5XYH7.module.json",
+                "x64\\Debug\\cstdint_JIY8CO6A34P5XYH7.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\cstdint",
+                    "source-path": "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\cstdint",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}
