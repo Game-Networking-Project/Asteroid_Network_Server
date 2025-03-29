@@ -4,3 +4,6 @@
 .ipch
 .git
 Bin
+.git/
+Bin/
+*.sln
