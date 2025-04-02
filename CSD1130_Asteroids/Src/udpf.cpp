@@ -1342,6 +1342,14 @@ udpf_interface::endpoint_addr_in udpf_interface::endpoint_addr_info(u16 port, u3
 		std::string portString{ std::to_string(port) };
 		getaddrinfo(host, portString.c_str(), &hints, &info);
 		memcpy(&out.ipv4.netip, info->ai_addr->sa_data + 2, sizeof(u32));
+		out.netport = htons(port);
 	}
+	return out;
+}
+
+udpf_interface::endpoint_addr_in udpf_interface::endpoint_addr_info(u16 port, std::string const& ip_string) {
+	endpoint_addr_in out;
+	inet_pton(AF_INET, ip_string.c_str(), &out.ipv4.netip);
+	out.netport = ntohs(port);
 	return out;
 }

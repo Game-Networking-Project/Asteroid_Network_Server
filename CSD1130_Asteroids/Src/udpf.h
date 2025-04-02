@@ -466,7 +466,7 @@ namespace udpf_interface { //optional: todo: create a simple interface or just t
 
 	std::optional<udpf_interface::connection>  connect(endpoint_addr_in& local, endpoint_addr_in& peer, connection_config&);
 	endpoint_addr_in endpoint_addr_info(u16 port, u32 netip = 0); //default is local ip
-
+	endpoint_addr_in endpoint_addr_info(u16 port, std::string const& ip_string); 
 }
 
 #ifdef SIMPLE_UDP_FRAMEWORK_IMPL
