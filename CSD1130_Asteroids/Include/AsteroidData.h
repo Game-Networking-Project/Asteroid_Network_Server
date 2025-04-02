@@ -4,7 +4,7 @@
 #define DATA_SIZE 41
 struct AsteroidData
 {
-	uint8_t owner;
+	bool active;
 	AEVec2 position;
 	AEVec2 scale;
 	AEVec2 velocity;

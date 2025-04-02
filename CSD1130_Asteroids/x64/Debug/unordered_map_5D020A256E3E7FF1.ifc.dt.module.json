@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\unordered_map.obj",
+            "outputs": [
+                "x64\\Debug\\unordered_map_5D020A256E3E7FF1.ifc.dt.module.json",
+                "x64\\Debug\\unordered_map_5D020A256E3E7FF1.ifc.dt.d.json",
+                "x64\\Debug\\unordered_map.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\unordered_map",
+                    "source-path": "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\unordered_map",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

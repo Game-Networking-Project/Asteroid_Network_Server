@@ -2,15 +2,9 @@
 
 #include <cstring>
 #include <WinSock2.h>
-void SetOwner(AsteroidData* data, uint8_t owner)
-{
-	data->owner = owner;
-}
 
-uint8_t GetOwner(AsteroidData* data)
-{
-	return data->owner;
-}
+
+
 
 void SetPosition(AsteroidData* data, AEVec2 position)
 {
@@ -135,16 +129,15 @@ char* ToNetworkData(AsteroidData* data)
 {
 	char* buffer = new char[DATA_SIZE] {};
 
-	memcpy(buffer, &data->owner, sizeof(uint8_t));
 
-	CopyVec2(buffer + 1, data->position);
-	CopyVec2(buffer + 9, data->scale);
-	CopyVec2(buffer + 17, data->velocity);
-	CopyVec2(buffer + 25, data->direction);
+	CopyVec2(buffer, data->position);
+	CopyVec2(buffer + 8, data->scale);
+	CopyVec2(buffer + 16, data->velocity);
+	CopyVec2(buffer + 24, data->direction);
 	u_long scoreCount = htonl(data->scoreCount);
-	memcpy(buffer + 33, &scoreCount, sizeof(u_long));
+	memcpy(buffer + 32, &scoreCount, sizeof(u_long));
 	u_long n_time = htonf(data->time);
-	memcpy(buffer + 37, &n_time, sizeof(u_long));
+	memcpy(buffer + 36, &n_time, sizeof(u_long));
 
 
 	return  buffer;
@@ -155,16 +148,15 @@ char* ToNetworkData(AsteroidData* data)
 AsteroidData FromNetworkData(char* buffer)
 {
 	AsteroidData data;
-	data.owner = *buffer;
-	data.position = ExtractVec2(buffer + 1);
-	data.scale = ExtractVec2(buffer + 9);
-	data.velocity = ExtractVec2(buffer + 17);
-	data.direction = ExtractVec2(buffer + 25);
+	data.position = ExtractVec2(buffer);
+	data.scale = ExtractVec2(buffer + 8);
+	data.velocity = ExtractVec2(buffer + 16);
+	data.direction = ExtractVec2(buffer + 24);
 	u_long scoreCount;
-	memcpy(&scoreCount, buffer + 33, sizeof(u_long));
+	memcpy(&scoreCount, buffer + 32, sizeof(u_long));
 	data.scoreCount = ntohl(scoreCount);
 	u_long n_time;
-	memcpy(&n_time, buffer + 37, sizeof(u_long));
+	memcpy(&n_time, buffer + 36, sizeof(u_long));
 	data.time = ntohf(n_time);
 	return data;
 }

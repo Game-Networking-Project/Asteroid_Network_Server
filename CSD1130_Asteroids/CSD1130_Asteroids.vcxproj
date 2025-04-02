@@ -170,20 +170,27 @@
   <ItemGroup>
     <ClInclude Include="Include\AsteroidData.h" />
     <ClInclude Include="Include\Collision.h" />
+    <ClInclude Include="Include\EngineUtility.h" />
+    <ClInclude Include="Include\fwd.h" />
     <ClInclude Include="Include\GameStateList.h" />
     <ClInclude Include="Include\GameStateMgr.h" />
     <ClInclude Include="Include\GameState_Asteroids.h" />
     <ClInclude Include="Include\Main.h" />
     <ClInclude Include="Include\Scoreboard.h" />
+    <ClInclude Include="Include\ShipState.h" />
+    <ClInclude Include="Include\udpf.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Module\ServerState.ixx" />
     <ClCompile Include="Src\AsteroidData.cpp" />
     <ClCompile Include="Src\Collision.cpp" />
+    <ClCompile Include="Src\EngineUtility.cpp" />
     <ClCompile Include="Src\GameStateMgr.cpp" />
     <ClCompile Include="Src\GameState_Asteroids.cpp" />
     <ClCompile Include="Src\Main.cpp" />
     <ClCompile Include="Src\Scoreboard.cpp" />
+    <ClCompile Include="Src\ServerState.cpp" />
+    <ClCompile Include="Src\udpf.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

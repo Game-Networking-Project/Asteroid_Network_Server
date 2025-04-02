@@ -21,14 +21,14 @@ prior written consent of DigiPen Institute of Technology is prohibited.
 #include "main.h"
 
 #include <memory>
+#include <string>
 
 
 // C++ 20 module
 import ServerState;
 import <mutex>;
 
-// Global variable
-ServerState serverState{};
+
 
 // ---------------------------------------------------------------------------
 // Globals
@@ -119,22 +119,21 @@ int WINAPI WinMain(HINSTANCE instanceH, HINSTANCE prevInstanceH, LPSTR command_l
 	// Get the IP address
 	char* ip = inet_ntoa(*(struct in_addr*)*host->h_addr_list);
 
-	std::cout << "IP Address: " << ip << std::endl;
-	std::cout << "Port: " << SERVER_PORT_BUFFER << std::endl;
+	/*std::cout << "IP Address: " << ip << std::endl;
+	std::cout << "Port: " << SERVER_PORT_BUFFER << std::endl;*/
 
+	std::thread inputThread = std::thread(&ServerState::HandleInput, &server);
 
+	inputThread.detach();
 
-
+	
 
 
 
 
 	GameStateMgrInit(GS_ASTEROIDS);
-
-	std::cout << "Waiting for Player to connect..." << std::endl;
-	std::unique_lock<std::mutex> lock(serverState.world.PlayerCountMutex);
-	serverState.world.PlayerCount.wait(lock, [&] {return serverState.world.numPlayers > 0; });
-	std::cout << "Player connected!" << std::endl;
+	std::thread listenerThread;
+	
 	while (gGameStateCurr != GS_QUIT)
 	{
 
@@ -145,7 +144,17 @@ int WINAPI WinMain(HINSTANCE instanceH, HINSTANCE prevInstanceH, LPSTR command_l
 		if (gGameStateCurr != GS_RESTART)
 		{
 			GameStateMgrUpdate();
+
+
 			GameStateLoad();
+
+			listenerThread = std::thread(&ServerState::Listen, &server, std::stoi(SERVER_PORT_BUFFER), false);
+
+			std::cout << "Waiting for Player to connect..." << std::endl;
+			std::unique_lock<std::mutex> lock(server.world.PlayerCountMutex);
+			server.world.PlayerCount.wait(lock, [&] {return server.world.numPlayers > 0; });
+			std::cout << "Player connected!" << std::endl;
+
 		}
 		else
 			gGameStateNext = gGameStateCurr = gGameStatePrev;
@@ -156,10 +165,9 @@ int WINAPI WinMain(HINSTANCE instanceH, HINSTANCE prevInstanceH, LPSTR command_l
 		while (gGameStateCurr == gGameStateNext)
 		{
 			AESysFrameStart();
-
 			GameStateUpdate();
 
-			GameStateDraw();
+			//GameStateDraw();
 
 			AESysFrameEnd();
 

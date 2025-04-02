@@ -1,7 +1,52 @@
 ﻿  Scanning sources for module dependencies...
+  ServerState.ixx
+  Compiling...
+  ServerState.ixx
+C:\Users\yeoji.000\Documents\Asteroid_Network_Server\CSD1130_Asteroids\Module\ServerState.ixx(6,27): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\yeoji.000\Documents\Asteroid_Network_Server\CSD1130_Asteroids\Module\ServerState.ixx(136,94): warning C4100: 'scale': unreferenced formal parameter
+C:\Users\yeoji.000\Documents\Asteroid_Network_Server\CSD1130_Asteroids\Module\ServerState.ixx(217,15): warning C4456: declaration of 'input' hides previous local declaration
+      C:\Users\yeoji.000\Documents\Asteroid_Network_Server\CSD1130_Asteroids\Module\ServerState.ixx(210,14):
+      see declaration of 'input'
+  
+  EngineUtility.cpp
+C:\Users\yeoji.000\Documents\Asteroid_Network_Server\CSD1130_Asteroids\Src\EngineUtility.cpp(37,56): warning C4267: '=': conversion from 'size_t' to 'unsigned long', possible loss of data
+C:\Users\yeoji.000\Documents\Asteroid_Network_Server\CSD1130_Asteroids\Src\EngineUtility.cpp(42,54): warning C4267: '=': conversion from 'size_t' to 'unsigned long', possible loss of data
+C:\Users\yeoji.000\Documents\Asteroid_Network_Server\CSD1130_Asteroids\Src\EngineUtility.cpp(46,54): warning C4267: '=': conversion from 'size_t' to 'unsigned long', possible loss of data
+  GameState_Asteroids.cpp
   Main.cpp
-C:\Users\yeoji.000\Downloads\Telegram Desktop\network_game\asteroid_server\CSD1130_Asteroids\Src\Main.cpp(58,90): warning C4100: 'show': unreferenced formal parameter
-C:\Users\yeoji.000\Downloads\Telegram Desktop\network_game\asteroid_server\CSD1130_Asteroids\Src\Main.cpp(186,1): warning C4715: 'WinMain': not all control paths return a value
-  CSD1130_Asteroids.vcxproj -> C:\Users\yeoji.000\Downloads\Telegram Desktop\network_game\asteroid_server\Bin\CSD1130_AsteroidsD.exe
+C:\Users\yeoji.000\Documents\Asteroid_Network_Server\CSD1130_Asteroids\Src\Main.cpp(58,90): warning C4100: 'show': unreferenced formal parameter
+C:\Users\yeoji.000\Documents\Asteroid_Network_Server\CSD1130_Asteroids\Src\Main.cpp(120,8): warning C4189: 'ip': local variable is initialized but not referenced
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\type_traits(1712,77): warning C4244: 'argument': conversion from 'int' to 'uint16_t', possible loss of data
+  (compiling source file 'Src/Main.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\type_traits(1712,77):
+      the template instantiation context (the oldest one first) is
+          C:\Users\yeoji.000\Documents\Asteroid_Network_Server\CSD1130_Asteroids\Src\Main.cpp(151,32):
+          see reference to function template instantiation 'std::thread::thread<void(__cdecl ServerState::* )(uint16_t,bool),ServerState*,int,bool,0>(_Fn &&,ServerState *&&,int &&,bool &&)' being compiled
+          with
+          [
+              _Fn=void (__cdecl ServerState::* )(uint16_t,bool)
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\thread(93,9):
+          see reference to function template instantiation 'void std::thread::_Start<_Ty,ServerState*,int,bool>(_Fn &&,ServerState *&&,int &&,bool &&)' being compiled
+          with
+          [
+              _Ty=void (__cdecl ServerState::* )(uint16_t,bool),
+              _Fn=void (__cdecl ServerState::* )(uint16_t,bool)
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\thread(76,40):
+          see reference to function template instantiation 'unsigned int (__cdecl *std::thread::_Get_invoke<std::thread::_Start::_Tuple,0,1,2,3>(std::integer_sequence<size_t,0,1,2,3>) noexcept)(void *) noexcept' being compiled
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\thread(67,17):
+          see reference to function template instantiation 'unsigned int std::thread::_Invoke<std::thread::_Start::_Tuple,0,1,2,3>(void *) noexcept' being compiled
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\thread(60,14):
+          see reference to function template instantiation 'void std::invoke<void(__cdecl ServerState::* )(uint16_t,bool),ServerState*,int,bool>(_Callable &&,_Ty1 &&,int &&,bool &&) noexcept(false)' being compiled
+          with
+          [
+              _Callable=void (__cdecl ServerState::* )(uint16_t,bool),
+              _Ty1=ServerState *
+          ]
+  
+  Generating Code...
+C:\Users\yeoji.000\Documents\Asteroid_Network_Server\CSD1130_Asteroids\Src\Main.cpp(194,1): warning C4715: 'WinMain': not all control paths return a value
+  CSD1130_Asteroids.vcxproj -> C:\Users\yeoji.000\Documents\Asteroid_Network_Server\Bin\CSD1130_AsteroidsD.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.

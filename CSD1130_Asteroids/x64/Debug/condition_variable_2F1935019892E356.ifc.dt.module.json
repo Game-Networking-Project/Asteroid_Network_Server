@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\condition_variable.obj",
+            "outputs": [
+                "x64\\Debug\\condition_variable_2F1935019892E356.ifc.dt.module.json",
+                "x64\\Debug\\condition_variable_2F1935019892E356.ifc.dt.d.json",
+                "x64\\Debug\\condition_variable.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\condition_variable",
+                    "source-path": "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.43.34808\\include\\condition_variable",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}
